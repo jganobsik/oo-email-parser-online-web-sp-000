@@ -14,7 +14,7 @@ end
 def parse
   parsed_list = @emails.split(/[[\, ] \s]/)
   parsed_list.delete('')
-  return parsed_list
+  parsed_list
 end
   
   

@@ -11,7 +11,7 @@ def initialize(emails)
   @@mail_list << emails
 end
 
-def parse
+def EmailParser.parse
   parsed_list = @@mail_list.split(/, /)
   return parsed_list
 end

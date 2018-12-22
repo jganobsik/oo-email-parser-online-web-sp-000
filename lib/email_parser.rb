@@ -19,6 +19,7 @@ def parse
     if filtered_and_parsed.include?(email) == false 
       filtered_and_parsed << email
     end
+  end
     return filtered_and_parsed
 end
   

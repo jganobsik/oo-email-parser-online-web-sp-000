@@ -12,9 +12,14 @@ def initialize(emails)
 end
 
 def parse
+  filtered_and_parsed = []
   parsed_list = @emails.split(/[[\, ] \s]/)
   parsed_list.delete('')
-  parsed_list
+  parsed_list.each do |email|
+    if filtered_and_parsed.include?(email) == false 
+      filtered_and_parsed << email
+    end
+    return filtered_and_parsed
 end
   
   

@@ -12,7 +12,7 @@ def initialize(emails)
 end
 
 def parse
-  parsed_list = @@mail_list.split(, )
+  parsed_list = @@mail_list.split(/, /)
   return parsed_list
 end
   

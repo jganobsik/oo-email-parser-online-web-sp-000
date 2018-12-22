@@ -8,11 +8,11 @@ class EmailParser
   @@mail_list = []
 
 def initialize(emails)
-  @@mail_list << emails
+  @emails = emails
 end
 
 def parse
-  parsed_list = @@mail_list.split(/, /)
+  parsed_list = @emails.split(/, /)
   return parsed_list
 end
   
